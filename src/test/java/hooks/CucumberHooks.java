@@ -15,18 +15,28 @@ import java.util.concurrent.TimeUnit;
 public class CucumberHooks {
     public WebDriver driver;
     public DriverFactory driverFactory;
-    @Before
-    public void setup(){
+
+    //@Before(order = 0)
+    public void firstHook() {
+        System.out.println("Testing1st hook");
+    }
+
+    //@Before(order = 1)
+    public void setup() {
         System.out.println("This is will be called before to every method");
-        driverFactory= new DriverFactory();
+        driverFactory = new DriverFactory();
         driverFactory.initialiseDriver();
 
     }
-    @After
-    public void tearDown(){
+
+    //@After(order = 1)
+    public void tearDown() {
         DriverFactory.getDriver().quit();
     }
 
+    //@After(order = 0)
+    public void lastHook() {
+        System.out.println("Testing1st hook");
 
-
+    }
 }

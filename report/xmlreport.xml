@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="10" time="48.527">
+    <testcase classname="This is the login feature for orange HRM" name="This is a login scenario" time="9.483">
+        <system-out>
+            <![CDATA[Given The user is in login page screen......................................passed
+When enter the credentials "Admin" and "admin123"...........................passed
+And Clicks login button of the login pagescreen.............................passed
+Then We should be navigate to home pagescreen...............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="This is the login feature for orange HRM" name="This is a login scenario 2" time="6.781">
+        <system-out>
+            <![CDATA[Given The user is in login page screen......................................passed
+When enter the credentials "Admin" and "admin123"...........................passed
+And Clicks login button of the login pagescreen.............................passed
+Then We should be navigate to home pagescreen...............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="This is the login feature for orange HRM" name="This is a login scenario" time="7.013">
+        <system-out>
+            <![CDATA[Given The user is in login page.............................................passed
+When enter the below credentials............................................passed
+And Clicks login button of the login page...................................passed
+Then We should be navigate to home page screen..............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="This is the login feature for orange HRM" name="This is a login scenario" time="4.789">
+        <failure message="Can't convert DataTable to List&lt;java.lang.String&gt;.&#10;Please review these problems:&#10;&#10; - There was a table cell transformer for java.lang.String but the table was too wide to use it.&#10;   Please reduce the table width to use this converter.&#10;&#10; - There was no table entry or table row transformer registered for java.lang.String.&#10;   Please consider registering a table entry or row transformer.&#10;&#10;Note: Usually solving one is enough" type="io.cucumber.datatable.UndefinedDataTableTypeException">
+            <![CDATA[Given The user  the login page..............................................passed
+When you enter the below credentials........................................failed
+And Clicks login button.....................................................skipped
+Then We should be navigate to home page.....................................skipped
+
+StackTrace:
+io.cucumber.datatable.UndefinedDataTableTypeException: Can't convert DataTable to List<java.lang.String>.
+Please review these problems:
+
+ - There was a table cell transformer for java.lang.String but the table was too wide to use it.
+   Please reduce the table width to use this converter.
+
+ - There was no table entry or table row transformer registered for java.lang.String.
+   Please consider registering a table entry or row transformer.
+
+Note: Usually solving one is enough
+	at io.cucumber.datatable.UndefinedDataTableTypeException.listNoConverterDefined(UndefinedDataTableTypeException.java:102)
+	at io.cucumber.datatable.DataTableTypeRegistryTableConverter.toList(DataTableTypeRegistryTableConverter.java:144)
+	at io.cucumber.datatable.DataTable.asList(DataTable.java:199)
+	at steps.DataTableWithoutHeaderSteps.you_enter_the_below_credentials(DataTableWithoutHeaderSteps.java:28)
+	at ✽.you enter the below credentials(file:///C:/Users/Yamuna/eclipse-workspace/cucumberPractice/./src/test/resources/features/DataTableWithoutHeader.feature:4)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="This fewature file is to explain expressions" name="This is an expression scenario" time="0.003">
+        <system-out>
+            <![CDATA[Given I have 1 laptop.......................................................passed
+Given I have 7.5 CGPA.......................................................passed
+Given "Arya" is elder to "Agni" and "Riya"..................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Test cases related to the leads" name="Login test case" time="0.01">
+        <failure message="" type="java.lang.NullPointerException">
+            <![CDATA[Given The user is on the login page.........................................failed
+When Entered the username "mailtokannama"...................................skipped
+And Entered the password "Pavi143@".........................................skipped
+And Click on login button...................................................skipped
+Then Validate user logged in successfully...................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at steps.RediffLoginSteps.the_user_is_on_the_login_page(RediffLoginSteps.java:27)
+	at ✽.The user is on the login page(file:///C:/Users/Yamuna/eclipse-workspace/cucumberPractice/./src/test/resources/features/Login.feature:5)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Test cases related to the leads" name="Click compose email" time="0.003">
+        <failure message="" type="java.lang.NullPointerException">
+            <![CDATA[Given The user is on the login page.........................................failed
+When Entered the username "mailtokannama"...................................skipped
+And Entered the password "Pavi143@".........................................skipped
+And Click on login button...................................................skipped
+Then Validate user logged in successfully...................................skipped
+And Logout from rediff mail.................................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at steps.RediffLoginSteps.the_user_is_on_the_login_page(RediffLoginSteps.java:27)
+	at ✽.The user is on the login page(file:///C:/Users/Yamuna/eclipse-workspace/cucumberPractice/./src/test/resources/features/Login.feature:13)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="This is the login feature for orange HRM" name="This is login scenario" time="6.765">
+        <system-out>
+            <![CDATA[Given The user in the login page............................................passed
+When The user enters the valid "Admin" and "admin123".......................passed
+And Clicks on login button..................................................passed
+Then User should be navigate to home page...................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="This is the login feature for orange HRM" name="This is login scenario" time="8.724">
+        <system-out>
+            <![CDATA[Given The user is in the login page.........................................passed
+When The user enters the valid username and password........................passed
+And Clicks on the login button..............................................passed
+Then User should be navigate to the home page...............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="This is to test google search" name="Google search scenario" time="4.509">
+        <system-out>
+            <![CDATA[Given user entering google.co.in............................................passed
+When user is typing the search term "Testing"...............................passed
+And Enters the return key...................................................passed
+Then User should see the search results.....................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

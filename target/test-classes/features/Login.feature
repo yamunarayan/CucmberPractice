@@ -1,3 +1,5 @@
+@featureTag
+
 Feature: Test cases related to the leads
 
   @Login
